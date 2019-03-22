@@ -1,4 +1,9 @@
 # express-typeorm-postgres-docker
 
-*run
+### run
+install docker first
+
+
+```
 docker-compose up
+```
