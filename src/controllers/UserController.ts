@@ -29,7 +29,7 @@ export class UserController {
   public async deleteUserById(req: Request, res: Response) {
     const userRepository = new UserRepository();
     const response = await userRepository.delete(req.params.id);
-    if(response) {
+    if(!response) {
       res.status(400).send({message: 'User not found..!'}); 
     }
 
